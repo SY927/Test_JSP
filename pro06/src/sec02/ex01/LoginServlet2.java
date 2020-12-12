@@ -43,6 +43,32 @@ public class LoginServlet2 extends HttpServlet {
 		
 		String id = request.getParameter("user_id");
 		String pw = request.getParameter("user_pw");
+		
+		/*
+		 String data = "<html>";
+		 String data2 = "<body>";
+		 String data3 = "아이디: " + id;
+		 String data4 = "<br>";
+		 String data5 = "비밀번호: " + pw;
+		 String data6 = "</html>";
+		 String data7 = "</body>";
+		 
+		 out.print(data);
+		 out.print(data2);
+		 out.print(data3);
+		 out.print(data4);
+		 out.print(data5);
+		 out.print(data6);
+		 out.print(data7);
+		 */
+		
+		 String data = "<html>";
+		 data += "<body>";
+		 data += "아이디: " + id;
+		 data += "<br>";
+		 data += "비밀번호: " + pw;
+		 data += "</html>";
+		 data += "</body>";
 	}
 
 }
