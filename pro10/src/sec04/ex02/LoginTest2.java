@@ -54,12 +54,11 @@ public class LoginTest2 extends HttpServlet {
 		String user_pw = request.getParameter("user_pw");
 		
 		LoginImpl loginUser = new LoginImpl(user_id, user_pw);
-		if (session.isNew()) {
+		if (session.isNew()) { //세션이 새로 만들어지면 로그인 정보가 들어있는 객체를 loginUser에 저장해라
 			session.setAttribute("loginUser", loginUser);
-			user_list.add(user_id);
-			context.setAttribute("user_list", user_list);
+			user_list.add(user_id); //user_list에 user_id넣기
+			context.setAttribute("user_list", user_list); //user_list 객체를 user_list라는 이름으로 context에 저장
 		}
-		
 		out.println("<html><body>");
 		out.println("아이디는 " + loginUser.user_id + "<br>");
 		out.println("총 접속자 수는 " + LoginImpl.total_user + "<br><br>");
@@ -67,7 +66,7 @@ public class LoginTest2 extends HttpServlet {
 		
 		List list=(ArrayList)context.getAttribute("user_list");
 		for (int i=0;i<list.size();i++) {
-			out.println(list.get(i) + "<br>");
+			out.print(list.get(i) + "<br>");
 		}
 		
 		out.println("<a href = 'logout?user_id="+user_id+"'>로그아웃</a>");
