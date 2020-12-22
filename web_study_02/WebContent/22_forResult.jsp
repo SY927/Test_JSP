@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>결과 페이지</title>
+</head>
+<body>
+<%
+public int sum(int a) {
+	int total = 0;
+	for(int )
+}
+%>
+</body>
+</html>
