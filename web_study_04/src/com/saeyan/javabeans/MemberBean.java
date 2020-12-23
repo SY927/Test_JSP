@@ -1,9 +1,17 @@
 package com.saeyan.javabeans;
 
 public class MemberBean {
+	 private String name;
 	 private String pwd;
+	 private String userid;
 	 
-	   public String getPwd() {
+	   public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getPwd() {
 	      return pwd;
 	   }
 	   public void setPwd(String pwd) {
@@ -15,7 +23,7 @@ public class MemberBean {
 	   public void setUserid(String userid) {
 	      this.userid = userid;
 	   }
-	   private String userid;
+	  
 	   
 	   
 		  

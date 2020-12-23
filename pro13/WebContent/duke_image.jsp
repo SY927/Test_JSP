@@ -13,6 +13,6 @@ String imgName = request.getParameter("imgName");
 </head>
 <body>
 <h2>이름은 <%=name%>입니다.</h2>
-<img src="image/<%=imgName%>">
+<img src="image/<%=imgName%>"> <!-- 실행할 파일과 이미지파일이 같은 폴더안에 있으면 './'를 써주거나 아무것도 안써주면 된다.  -->
 </body>
 </html>
