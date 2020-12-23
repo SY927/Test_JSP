@@ -56,9 +56,10 @@ public class SessionTest4 extends HttpServlet {
 			if (id != null) {
 				session.setAttribute("id", id);
 				out.println("<a href='login'>로그인 상태 확인</a>");
-				session.invalidate();
+				
 			} else {
 				out.println("<a href='login2.html'>다시 로그인 하세요</a>");
+				session.invalidate();
 			}
 			
 		} else {
@@ -67,6 +68,7 @@ public class SessionTest4 extends HttpServlet {
 				out.print("안녕하세요 " + id + "님");
 			} else {
 				out.print("<a href='login2.html'>다시 로그인 하세요</a>");
+				session.invalidate();
 			}
 		}
 	}
