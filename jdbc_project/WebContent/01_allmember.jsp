@@ -35,7 +35,7 @@ String sql2 = "insert into member values('강현승','liver','1234','liver@naver
  	try { //순서와 문법 외워두기
 	 Class.forName("oracle.jdbc.driver.OracleDriver");
 	 conn = DriverManager.getConnection(url, uid, pas);
-	 stmt = conn.createStatement();
+	 stmt = conn.createStatement(); 
 	 stmt.executeUpdate(sql2);
 	 rs = stmt.executeQuery(sql);
 	 

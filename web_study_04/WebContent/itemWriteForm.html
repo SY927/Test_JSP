@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+td {
+border:0;
+}
+
+#rowstyle {
+font-weight:bold;
+background-color:#e5e5e5;
+text-align:center;
+}
+</style>
+</head>
+<body>
+<h2>상품정보 입력 폼</h2>
+<form method = "post" action ="ItemWrite.jsp">
+<table>
+<tr>
+<td id = "rowstyle">상품평</td>
+<td><input type = "text" name = "name"></td>
+</tr>
+
+<tr>
+<td id = "rowstyle">가격</td>
+<td><input type = "text" name = "price"></td>
+</tr>
+<tr>
+<td id = "rowstyle" height = "100px">설명</td>
+<td>
+<textarea cols ="80" rows="10" name = "description"></textarea>
+</td>
+</tr>
+
+<tr>
+<td colspan = "2" align="center">
+<input type = "submit" value = "전송">
+<input type = "reset" value = "취소">
+</td>
+</tr>
+</table>
+</form>
+</body>
+</html>
